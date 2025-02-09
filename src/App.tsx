@@ -1,7 +1,7 @@
-import { Box, Card, CardActions, CardContent, CardMedia, IconButton, Typography } from '@mui/material'
+import { Box, Card, CardActions, CardContent, CardMedia, Divider, IconButton, Typography } from '@mui/material'
 import CountUp from 'react-countup'
-import { FaInstagram, FaTiktok, FaYoutube } from 'react-icons/fa'
-import { SiKick } from 'react-icons/si'
+import { FaInstagram, FaTiktok, FaYoutube, FaPaypal } from 'react-icons/fa'
+import { SiKick, SiMercadopago } from 'react-icons/si'
 
 function App() {
   const diasTranscurridosEnElAño = () => {
@@ -45,19 +45,28 @@ function App() {
             </Typography>
           </Box>
         </CardContent>
-        <CardActions sx={{ justifyContent: 'center' }}>
+        <CardActions sx={{ justifyContent: 'center', flexDirection: 'column' }}>
           <Box sx={{ display: 'flex', gap: 1 }}>
-            <IconButton aria-label='tiktok'>
+            <IconButton href='https://www.tiktok.com/@chololgi?_t=ZM-8tlZg8Ctfks&_r=1' target='_blank' aria-label='tiktok'>
               <FaTiktok />
             </IconButton>
             <IconButton href='https://www.instagram.com/chololgi/' target='_blank' aria-label='instagram'>
               <FaInstagram />
             </IconButton>
-            <IconButton aria-label='youtube'>
+            <IconButton href='https://youtube.com/@chololgi' target='_blank' aria-label='youtube'>
               <FaYoutube />
             </IconButton>
-            <IconButton aria-label='kick'>
+            <IconButton href='https://kick.com/chololgi' target='_blank' aria-label='kick'>
               <SiKick />
+            </IconButton>
+          </Box>
+          <Divider sx={{ width: '185px' }} />
+          <Box sx={{ display: 'flex', gap: 1 }}>
+            <IconButton href='http://link.mercadopago.com.ar/chololgi' target='_blank' aria-label='mercado pago'>
+              <SiMercadopago />
+            </IconButton>
+            <IconButton href='https://paypal.me/sircholoLM?country.x=AR&locale.x=es_XC' target='_blank' aria-label='paypal'>
+              <FaPaypal />
             </IconButton>
           </Box>
         </CardActions>
