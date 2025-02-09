@@ -56,7 +56,7 @@ function App() {
             <IconButton href='https://www.instagram.com/chololgi/' target='_blank' aria-label='instagram'>
               <FaInstagram />
             </IconButton>
-            <IconButton href='https://youtube.com/@chololgi' target='_blank' aria-label='youtube'>
+            <IconButton href='https://m.youtube.com/results?search_query=Chololgi' target='_blank' aria-label='youtube'>
               <FaYoutube />
             </IconButton>
             <IconButton href='https://kick.com/chololgi' target='_blank' aria-label='kick'>
