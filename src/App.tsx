@@ -23,9 +23,12 @@ function App() {
           sx={{ objectPosition: 'top' }}
         />
         <CardContent>
-          <Box>
+          <Box sx={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <Typography gutterBottom variant='h5' className='cover' component='div'>
               #Retosnatch365
+            </Typography>
+            <Typography variant='body2' sx={{ color: 'text.secondary' }}>
+              {new Date().toLocaleDateString()}
             </Typography>
           </Box>
           <Box sx={{ display: 'flex', justifyContent: 'space-between' }}>
