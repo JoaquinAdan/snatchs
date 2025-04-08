@@ -53,7 +53,7 @@ function App() {
             </Typography>
           </Box>
           {extra && (
-            <Box sx={{ display: 'flex', justifyContent: 'flex-end', pr: 3 }}>
+            <Box sx={{ display: 'flex', justifyContent: 'flex-end', pr: 3, mt: "-5px" }}>
               <Typography variant='body2' sx={{ color: 'text.secondary', fontWeight: 'bold' }}>
                 (+{extra})
               </Typography>
